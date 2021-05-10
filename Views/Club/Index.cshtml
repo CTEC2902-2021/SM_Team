@@ -1,0 +1,14 @@
+﻿
+@model List<Football.Models.Club>
+
+@{
+    ViewBag.Title = "Index";
+}
+<ul>
+    <h2>Club</h2>
+    @foreach (var Club in @Model)
+    {
+        <li><a href="~/Club/Details/@Club.ClubId">@Club.ClubName</a></li>
+    }
+
+</ul>
