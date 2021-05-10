@@ -1,0 +1,20 @@
+﻿
+@model Football.Models.Club
+
+@{
+    ViewBag.Title = "Details";
+    <h2>Club Details</h2>
+    @Html.LabelFor(model => model.ClubId, htmlAttributes: new { @class = "control-label col-md-2" })
+    <tr>@Model.ClubId</tr>
+
+    <br>@Html.LabelFor(model => model.ClubName, htmlAttributes: new { @class = "control-label col-md-2" })
+    <tr>@Model.ClubName</tr>
+
+    <br> @Html.LabelFor(model => model.ClubDescription, htmlAttributes: new { @class = "control-label col-md-2" })
+    <tr>@Model.ClubDescription</tr>
+
+    <br>@Html.LabelFor(model => model.PlayerName, htmlAttributes: new { @class = "control-label col-md-2" })
+    <tr>@Model.PlayerName</tr>
+
+}
+

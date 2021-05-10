@@ -1,0 +1,16 @@
+﻿@model List<Football.Models.Player> 
+
+@{
+    ViewBag.Title = "Index";
+}
+<ul>
+    <h2>Players</h2>
+    @foreach (var Player in @Model)
+    {
+        <li><a href="~/Player/Details/@Player.PlayerId">@Player.PlayerName</a></li>
+    }
+
+</ul>
+
+
+
